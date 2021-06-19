@@ -52,7 +52,7 @@ export default function RegisterPage() {
 		}
 	}, [password, confirmPassword, email, firstName, lastName]);
 
-	const registerUser = e => {
+	const register = e => {
 		e.preventDefault();
 		fetch(`${api}/auth/register`, {
 			method: 'POST',
